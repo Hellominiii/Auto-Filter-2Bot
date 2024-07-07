@@ -20,7 +20,7 @@ def is_enabled(value, default):
 #main variables
 API_ID = int(environ.get('API_ID', '22827872'))
 API_HASH = environ.get('API_HASH', 'a9e30c6a4784192f919406d19ba44e80')
-BOT_TOKEN = environ.get('BOT_TOKEN', '7127950400:AAEe7bwRcZxM4ZD6A2hxp1_vq1NiUzjqqkY')
+BOT_TOKEN = environ.get('BOT_TOKEN', '')
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6615966362').split()]
 USERNAME = environ.get('USERNAME', 'https://t.me/renoji')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002071398722'))
@@ -38,7 +38,7 @@ BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002032456077'))
 URL = environ.get('URL', '')
 
 # verify system vars
-IS_VERIFY = is_enabled('IS_VERIFY', True)
+IS_VERIFY = is_enabled('IS_VERIFY', False)
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002047161941'))
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/how_to_download_channel/17")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
