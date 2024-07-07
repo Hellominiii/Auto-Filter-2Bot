@@ -12,7 +12,7 @@ aiofiles
 ffmpeg-python
 ffmpeg
 requests
-aiohttp==3.8.5
+aiohttp==3.8.2
 telegraph
 ujson
 pyshorteners
@@ -25,3 +25,6 @@ Pillow
 speedtest-cli
 psutil
 shortzy
+Flask==2.2.2
+gunicorn==20.1.0
+
